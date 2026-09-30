@@ -1,0 +1,4 @@
+/target
+**/*.rs.bk
+captura*.png
+screenshot*.png
