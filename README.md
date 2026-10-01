@@ -1,4 +1,4 @@
-#  Diorama con Raytracing — Archipiélago flotante
+#   Raytracing — Isla flotante
 
 **Proyecto 2 · Gráficas por Computadora · Universidad del Valle de Guatemala**
 Samuel Antonio Robledo López
