@@ -1,15 +1,13 @@
-# 🐉 Diorama con Raytracing — Archipiélago flotante
+#  Diorama con Raytracing — Archipiélago flotante
 
 **Proyecto 2 · Gráficas por Computadora · Universidad del Valle de Guatemala**
 Samuel Antonio Robledo López
 
 Raytracer en tiempo real escrito en **Rust**, implementado desde cero. La matemática vectorial, las rotaciones, las texturas, el skybox, la refracción, la reflexión, las sombras, el bloom y el multihilo usan **solo la librería estándar**. `raylib` se usa únicamente para abrir la ventana, leer el input y mostrar el framebuffer.
 
-## 🎥 Video
+##  Video
 
-https://github.com/user-attachments/assets/REEMPLAZAR-CON-TU-VIDEO
-
-## 🌄 La escena
+##  La escena
 
 Un archipiélago flotante estilo Minecraft con un ciclo de día y noche completo:
 
@@ -20,7 +18,7 @@ Un archipiélago flotante estilo Minecraft con un ciclo de día y noche completo
 - **Dragón del End:** vuela en círculos sobre las islas. Aletea con alas articuladas, mueve la cola y la mandíbula, tiene ojos que brillan y proyecta su sombra sobre la escena.
 - **Mobs nocturnos:** al caer la noche aparecen zombies, creepers y un enderman. Deambulan por la isla, esquivan obstáculos, no caen al vacío y desaparecen al amanecer.
 
-## ✅ Rúbrica
+##  Rúbrica
 
 | Criterio | Implementación |
 |---|---|
@@ -32,7 +30,7 @@ Un archipiélago flotante estilo Minecraft con un ciclo de día y noche completo
 | Reflexión (5) | Oro, obsidiana, agua, vidrio y piedra, con rebotes recursivos |
 | Skybox (20) | 3 cubemaps de 6 caras (día, atardecer, noche) generados proceduralmente y mezclados según la hora, con sol y luna dibujados en tiempo real |
 
-## 🧱 Materiales
+##  Materiales
 
 | Material | Albedo | Specular | Transparencia | Reflectividad | IOR | Extra |
 |---|---|---|---|---|---|---|
@@ -54,7 +52,7 @@ Un archipiélago flotante estilo Minecraft con un ciclo de día y noche completo
 | End Stone | 0.92 | 0.08 | 0 | 0 | — | |
 | Mena de diamante | 0.88 | 0.80 | 0 | 0.05 | — | Destellos especulares |
 
-## 🎮 Controles
+##  Controles
 
 | Tecla | Acción |
 |---|---|
@@ -70,13 +68,13 @@ Un archipiélago flotante estilo Minecraft con un ciclo de día y noche completo
 | F12 | Guardar captura |
 | H | Mostrar/ocultar controles |
 
-## ▶️ Cómo correrlo
+##  Cómo correrlo
 
 ```bash
 cargo run --release
 ```
 
-## 🛠️ Detalles técnicos
+##  Detalles técnicos
 
 - **Recorrido DDA** (Amanatides & Woo) sobre un grid de 40×28×40.
 - **Objetos dinámicos como cajas orientadas (OBB):** el rayo se transforma al espacio local de cada caja. Las piezas se agrupan con esferas envolventes para descartarlas rápido. Usan articulaciones jerárquicas (pivote + rotación) para piernas, brazos, alas y mandíbula.
@@ -88,7 +86,7 @@ cargo run --release
 - **Modo foto:** jitter subpixel con secuencia de Halton y jitter de luces, promediando los frames de forma progresiva.
 - **Multihilo** con `std::thread::scope`.
 
-## 📁 Estructura
+##  Estructura
 
 ```
 src/
